@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 120rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.05), 3px 4px 8px rgba(0, 0, 0, 0.08);
+  max-width: 40rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card .card__img {
+  width: 100%;
+}
+
+.card .card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+  padding: 2rem 4rem;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.card__content .card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.card__content .card__text .card__heading {
+  color: hsl(223, 47%, 23%);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.card__content .card__text .card__subheading {
+  color: hsl(224, 23%, 55%);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.card__content .card__plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card__content .card__plan .plan__img img {
+  border: none;
+  border-radius: 50%;
+  height: 4rem;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.card__content .card__plan .plan__text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(223, 47%, 23%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+}
+
+.card__content .card__plan a {
+  color: hsl(245, 75%, 52%);
+  letter-spacing: 1px;
+  margin-left: 5rem;
+  font-size: 700;
+}
+
+.card .card__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.card .card__btn .btn {
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+}
+
+.card__btn .btn-primary {
+  background-color: hsl(245, 75%, 52%);
+  padding: 1.3rem 3rem;
+  color: hsl(225, 100%, 98%);
+  letter-spacing: 1px;
+  border-radius: 10px;
+  box-shadow: 3px 8px 8px 3px hsla(245, 75%, 52%, 0.3),
+    2px 5px 10px hsla(245, 75%, 52%, 0.2);
+  width: 100%;
+}
+
+.card__btn .btn-secondary {
+  color: hsl(224, 23%, 55%);
+  letter-spacing: 1px;
+}
